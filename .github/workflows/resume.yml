@@ -1,8 +1,9 @@
 ---
 name: Build LaTeX document
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
 
 jobs:
   build-resume:
