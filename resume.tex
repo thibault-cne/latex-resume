@@ -1,0 +1,173 @@
+\documentclass[a4paper]{MagicalCV}
+
+% Removing page numbers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Change the geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% colors
+\definecolor{tertiary}{HTML}{041E42}
+\definecolor{secondary}{HTML}{E40046}
+\definecolor{primary}{HTML}{00A3E0}
+\definecolor{Black}{HTML}{000000}
+
+\colorlet{heading}{primary}
+\colorlet{accent}{tertiary}
+\colorlet{emphasis}{secondary}
+\colorlet{body}{Black}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{primary}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% start document
+\begin{document}
+
+% Last update time
+% \lastupdated
+
+% Title name
+\namesection{}{Thibault Cheneviere}{
+\homepage{\href{https://thibault-cne.fr}{thibault-cne.fr}}
+\phone{+33 7 82 42 35 95}
+\email{\href{mailto:thibault.cheneviere@yahoo.com}{thibault.cheneviere@yahoo.com}} \\
+\vspace{10pt}
+\fontsize{20pt}{20pt}\selectfont Website and Software Developer
+}
+
+% Column one
+\begin{minipage}[t]{0.33\textwidth}
+
+% Links
+\cvsection{Links}
+
+\github{GitHub} \href{https://github.com/thibault-cne}{\bf thibault-cne} \\
+\linkedin{Linkedin} \href{https://www.linkedin.com/in/thibault-cne}{\bf thibault-cne}
+\sectionsep
+
+\cvsection{Languages}
+
+\begin{tightemize}
+    \item French: mother tongue
+    \item English: TOEIC C1 (945/990)
+    \item  Spanish: high school certificate B2
+\end{tightemize}
+
+\sectionsep
+
+% Education
+\cvsection{Education}
+
+\subsection{University of Sherbrooke}
+\descript{MSc in Cybersecurity}
+\cvevent{2023 - 2024}{Montreal, Canada}
+\sectionsep
+
+\subsection{TELECOM Nancy}
+\descript{MSc in Computer Science \& Engineering}
+\cvevent{2021 - 2024}{Nancy, France}
+\sectionsep
+
+\subsection{Fénelon St Marie}
+\descript{Classe préparatoire - Math, Physics \& Computer Science}
+\cvevent{2020 - 2022}{Paris, France}
+Two-year intensive program preparing for the national competitive exam for entry to engineering schools (Grandes écoles).
+\sectionsep
+
+% Skills
+\cvsection{Skills}
+
+\subsection{Programming}
+Assembly \textbullet{} C/C++ \textbullet{} C\# \textbullet{} Golang \textbullet{} HTML/CSS \textbullet{} Java \textbullet{} JavaScript/Typescript \textbullet{} Latex \textbullet{} Python \textbullet{} Ruby \textbullet{} Rust \textbullet{} SQL
+\sectionsep
+
+\subsection{Frameworks \& Librairies}
+Flask \textbullet{} Node.js \textbullet{} React \textbullet{} Rocket \textbullet{} Svelte/Sveltekit \textbullet{} Vue \textbullet{} Rails
+\sectionsep
+
+\subsection{Tools \& Others}
+Azure DevOps \textbullet{} Docker \textbullet{} Git \textbullet{}  GitHub \textbullet{} Kubernetes \textbullet{} Linux \textbullet{} MongoDB \textbullet{} Postgres \textbullet{}
+Salesforce \textbullet{} Terraform
+\sectionsep
+
+% Interests
+\cvsection{Interests}
+
+\begin{tightemize}
+    \item Sport, especially handball (playing in pre-nationals league) and motorsport
+    \item Writting articles and working on IT projects
+    \item Travelling
+\end{tightemize}
+
+% Column two
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+% Experience
+\cvsection{Experience}
+
+\runsubsection{Software Engineer Intern} \\
+\descript{Bradley \& Rollins}
+\cvevent{May 2024 – Aug 2024}{Montreal, Canada}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Designed a full-stack email-sending system using React, Golang, and NATS.io, enabling customers to validate their email addresses and retrieve their passwords.
+    \item Optimized Docker images for all backend services, reducing their size and memory consumption by 75\%, which significantly lowered cloud costs.
+    \item Developed and deployed a utility tool to remove all Kubernetes pods in a completed state, improving the developer experience in the development environment and reducing cluster memory consumption.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software Engineer Intern} \\
+\descript{Thales SIX GTS}
+\cvevent{May 2023 – Aug 2023}{Gennevilliers, France}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Designed and developed a REST API in Rust to operate a network detection probe.
+    \item Used Docker to deploy the API as a portable and user-friendly container, enabling users to deploy the API on their own instances.
+    \item Wrote Bash scripts and utilized Linux tools to create a Debian package for deploying the API directly within the probe environment, allowing the company to integrate the API seamlessly into the probe and reducing customer effort to get the product running.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Volunteering Tutor} \\
+\descript{TELECOM Nancy}
+\cvevent{2022 – 2023}{Nancy, France}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Organized lectures on the C programming language and the Linux file system for all first-year students.
+\item Conducted a workshop on a C school project to develop a tool similar to the \textit{find} command.
+\end{tightemize}
+\sectionsep
+
+% Recent Projects
+\cvsection{Notable Projects}
+
+\runsubsection{Race Tech} \\
+\descript{Personal}
+\cvevent{Jan 2024 – WIP}{Paris, France}
+\begin{tightemize}
+    \item Developed an open-source Formula 1 API powered by GraphQL and Rust.
+    \item Created a GitHub pipeline to parse weekly Formula 1 race results, enabling users to access the latest results within hours of their release.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{dnsr} \\
+\descript{Personal}
+\cvevent{Jun 2024 – WIP}{Paris, France}
+\begin{tightemize}
+    \item Created a DNS authoritative server to simplify the creation of wildcard certificates using the ACME protocol, allowing users to manage wildcard certificates with minimal configuration.
+\end{tightemize}
+\sectionsep
+
+\end{minipage}
+\end{document}
